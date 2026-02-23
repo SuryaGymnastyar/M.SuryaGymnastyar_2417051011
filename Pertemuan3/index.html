@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header style=" border-radius: 10px; display: flex; align-items:center; justify-content: space-between; padding:15px; background-color: #FFCC00;">
+        <nav style="display: flex; align-items: center; gap:8px;">
+            <img style="border-radius:50%; object-fit: cover;" src="logo.png" alt="logo.png" width="60" height=60>
+            <a href="index.html">Home</a>
+            <a href="Blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Form input Mahasiswa</h2>
+
+        <form action="submit.php" method="post" target="_blank">
+            <label for="nama">Nama: </label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama"></br>
+            <p></p>
+
+            <label for="npm">NPM: </label>
+            <input type="text" id="npm" name="npm" placeholder="Masukkan NPM"></br>
+            <p></p>
+
+            <label for="kelas">Kelas: </label>
+            <select name="kelas" id="kelas">
+                <option value="" selected disabled> Pilih Kelas</option>
+                <option value="kelas">A</option>
+                <option value="kelas">B</option>
+            </select></br>
+            <p></p>
+
+            <label for="tanggal">Tanggal: </label>
+            <input type="date" id="tanggal" name="tanggal" placeholder="Masukkan Tanggal">
+            <p></p>
+
+            <label for="waktu">Waktu: </label>
+            <input type="time" name="waktu" id="waktu"> 
+            <p></p>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
